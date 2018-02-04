@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{1001617F-E6D4-B09F-078E-1B2A9AE0A014}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\PhotonLoadbalancingApi\Extensions.cs" />
+     <Compile Include="Assets\Plugins\PhotonLoadbalancingApi\FriendInfo.cs" />
+     <Compile Include="Assets\Plugins\PhotonLoadbalancingApi\LoadBalancingClient.cs" />
+     <Compile Include="Assets\Plugins\PhotonLoadbalancingApi\LoadBalancingPeer.cs" />
+     <Compile Include="Assets\Plugins\PhotonLoadbalancingApi\Player.cs" />
+     <Compile Include="Assets\Plugins\PhotonLoadbalancingApi\Room.cs" />
+     <Compile Include="Assets\Plugins\PhotonLoadbalancingApi\RoomInfo.cs" />
+     <Compile Include="Assets\Plugins\PhotonLoadbalancingApi\WebRpc.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\AudioUtil.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\ObjectPool.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\OpusCodec.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\Enums\Bandwidth.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\Enums\Channels.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\Enums\Complexity.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\Enums\Delay.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\Enums\ForceChannels.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\Enums\OpusApplicationType.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\Enums\OpusCtlGetRequest.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\Enums\OpusCtlSetRequest.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\Enums\OpusStatusCode.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\Enums\SamplingRate.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\Enums\SignalHint.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\OpusDecoder.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\OpusEncoder.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\OpusException.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\POpusCodec\OpusWrapper.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\SpeexProcessor.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\Voice.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\VoiceAudio.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\VoiceClient.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\VoiceCodec.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\VoiceFramed.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\VoiceInfo.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\VoiceSourceAdapter.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Core\VoiceVideo.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\LoadBalancingFrontend.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Platforms\Unity\AndroidAudioInAEC.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Platforms\Unity\AppleAudioInPusher.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Platforms\Unity\AppleAudioInReader.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Platforms\Unity\AudioClipWrapper.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Platforms\Unity\AudioInEnumerator.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Platforms\Unity\AudioOutCapture.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Platforms\Unity\AudioStreamPlayer.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Platforms\Unity\IOSAudioForceToSpeaker.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Platforms\Unity\MicWrapper.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Platforms\Unity\SpeexDSP.cs" />
+     <Compile Include="Assets\Plugins\PhotonVoiceApi\Platforms\Unity\WindowsAudioIn.cs" />
+     <None Include="Assets\Photon Unity Networking\link.xml" />
+     <None Include="Assets\PUNVoice\DemoVoice\Fonts\Orbitron Black.txt" />
+     <None Include="Assets\Plugins\PhotonVoiceApi\readme.txt" />
+     <None Include="Assets\PUNVoice\readme.txt" />
+     <None Include="Assets\PUNVoice\DemoVoice\Editor\Fonts\Orbitron Black.txt" />
+     <None Include="Assets\Plugins\Photon3Unity3D.xml" />
+     <None Include="Assets\PUNVoice\DemoVoice\Audio\Reminder-public_d-291_hifi.mp3.txt" />
+     <None Include="Assets\Plugins\release_history.txt" />
+     <None Include="Assets\PUNVoice\DemoVoice\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\PUNVoice\changelog.txt" />
+     <None Include="Assets\Photon Unity Networking\readme.txt" />
+     <None Include="Assets\Plugins\libspeexdsp.bundle\build.txt" />
+     <None Include="Assets\PUNVoice\DemoVoice\Textures\SkyBox-Texture.txt" />
+     <None Include="Assets\PUNVoice\DemoVoice\Audio\Pop-J_Fairba-8421_hifi.mp3.txt" />
+     <None Include="Assets\Photon Unity Networking\changelog.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="Photon3Unity3D">
+ <HintPath>C:/Users/Vinay/Desktop/VOIP/Ngvr_Test/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
